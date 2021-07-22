@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { About } from '../components/About'
+import { Product } from '../components/Product';
 
 import styles from './home.module.scss';
 
@@ -25,6 +26,7 @@ export default function Home() {
         </section>
 
         <About />
+        {/*<Product />*/}
       </main>
     </>
   )

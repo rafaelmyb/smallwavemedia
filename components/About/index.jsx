@@ -16,12 +16,12 @@ export function About() {
         </div>
       </div>
       
-      {/* <Image 
+      {/*<Image 
         src={asideImg}
         alt="Logo Small Wave"
         width={790}
         height={490}
-      /> */}
+      />*/}
     </section>
   )
 }

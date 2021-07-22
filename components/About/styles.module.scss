@@ -1,20 +1,28 @@
 .aboutUs {
-  height: 876px;
-  background: var(--black);
+  height: 100vh;
+  min-height: 820px;
   padding: 0 2rem;
+
+  background: var(--black);
+  
+  
 }
 
 .container {
   max-width: 1120px;
+  height: 100vh;
+  min-height: 820px;
   margin: 0 auto;
 
   display: flex;
+  align-items: center;
+
+  z-index: 100;
 }
 
 .content {
   width: 635px;
-  
-  padding: 10rem 0;
+  height: 560px;
 
   h1 {
     font-size: 3.5rem;

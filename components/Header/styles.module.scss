@@ -11,7 +11,8 @@
 
 .headerContent {
   width: 600px;
-
+  position: relative;
+  left: -1.5rem;
   nav {
     display: flex;
     align-items: center;

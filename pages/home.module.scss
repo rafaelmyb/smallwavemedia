@@ -1,33 +1,35 @@
 .hero {
+  height: calc(100vh - 5rem);
+  min-height: calc(820px - 5rem);
 
   padding: 0 2rem;
 
   video {
-    width: 100%;
-    height: 820px;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 820px;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 0;
     object-fit: cover;
-    transform: translate(-50%);
     z-index: -1;
-
     filter: brightness(0.8);
   }
 }
 
 .container {
   max-width: 1120px;
-  height: 732px;
+  height: calc(100vh - 5rem);
   margin: 0 auto;
 
   display: flex;
+  align-items: center;
 }
 
 .content {
   width: 595px;
-  margin: 7.5rem 0;
-
+  height: 465px;
+  
   h1 {
     font-size: 8.5rem;
     font-weight: 800;
@@ -56,5 +58,11 @@
 
     font-weight: 700;
     color: var(--black);
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 }
