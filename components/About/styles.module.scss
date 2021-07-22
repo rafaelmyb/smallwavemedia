@@ -1,0 +1,38 @@
+.aboutUs {
+  height: 876px;
+  background: var(--black);
+  padding: 0 2rem;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.content {
+  width: 635px;
+  
+  padding: 10rem 0;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+
+    margin-bottom: 3.125rem;
+  }
+
+  p {
+    width: 500px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.250rem;
+
+    color: var(--gray-300);
+
+    & + p {
+      margin-top: 2.5rem;
+    }
+  };
+}

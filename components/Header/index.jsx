@@ -1,4 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
+import logoImg from '../../public/images/logo.png';
+
 import styles from './styles.module.scss';
 
 export function Header() {
@@ -8,7 +11,13 @@ export function Header() {
         <nav>
           <a href="">Sobre nós</a>
           <a href="">Produtos</a>
-          <img src="/images/logo.png" alt="Logo Small Wave" />
+          <Image 
+            src={logoImg} 
+            alt="Logo Small Wave"
+            width={332}
+            height={332}
+            priority={true}
+          />
           <a href="">Equipe</a>
           <a href="">Contato</a>
         </nav>
