@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 export function About() {
   return(
-    <section className={styles.aboutUs}>
+    <section className={styles.aboutUs} id={"about"} >
       <div className={styles.container}>
         <div className={styles.content}>
           <h1>O que é a Small Wave?</h1>

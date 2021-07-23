@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
+import Link from 'next/link';
+
 import logoImg from '../../public/images/logo.png';
 
 import styles from './styles.module.scss';
@@ -9,8 +11,8 @@ export function Header() {
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
         <nav>
-          <a href="">Sobre nós</a>
-          <a href="">Produtos</a>
+          <Link href="#about">Sobre nós</Link>
+          <Link href="#products">Produtos</Link>
           <Image 
             src={logoImg} 
             alt="Logo Small Wave"
@@ -18,8 +20,8 @@ export function Header() {
             height={332}
             priority={true}
           />
-          <a href="">Equipe</a>
-          <a href="">Contato</a>
+          <Link href="#team">Equipe</Link>
+          <Link href="#contact">Contato</Link>
         </nav>
       </div>
     </header>

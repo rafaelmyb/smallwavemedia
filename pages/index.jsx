@@ -26,7 +26,7 @@ export default function Home() {
         </section>
 
         <About />
-        {/*<Product />*/}
+        <Product />
       </main>
     </>
   )
