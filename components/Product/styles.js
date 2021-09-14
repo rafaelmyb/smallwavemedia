@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   max-width: 100%;
-  height: 720px;
+  height: 700px;
   padding: 0 2rem;
 
   background: var(--gray-800);
@@ -12,7 +12,7 @@ export const Container = styled.div`
   max-width: 1280px;
   width: 100%;
   padding: 4.5rem 2rem;
-  height: 720px;
+  height: 700px;
   margin: 0 auto;
   
   display: flex;
@@ -23,20 +23,20 @@ export const Container = styled.div`
    font-weight: 800;
    line-height: 3.4375rem;
    width: 450px;
+   margin-top: 1rem;
  }
 `;
 
 export const Content = styled.div`
   width: 1280px;
-  height: 620px;
-  margin-top: 2rem;
+  height: 600px;
 `;
 
 export const ContainerSquad = styled.div`
   display: flex;
   justify-content: space-between;
 
-  margin-top: 4rem;
+  margin-top: 3rem;
 `;
 
 export const Squad = styled.div`

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
-  height: 660px;
+  height: 661px;
   padding: 0 2rem;
 
   background: var(--black);
@@ -12,7 +12,7 @@ export const Container = styled.div`
   max-width: 1280px;
   width: 100%;
   padding: 4.5rem 2rem;
-  height: 660px;
+  height: 620px;
   margin: 0 auto;
 
   display: flex;
@@ -21,7 +21,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 635px;
-  height: 500px;
+  height: 450px;
 
   h1 {
     font-size: 2.875rem;
