@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  height: calc(100vh - 5rem);
-  min-height: calc(820px - 5rem);
+  height: 100vh;
 
   padding: 0 2rem;
 
   video {
     width: 100%;
-    height: 100vh;
-    min-height: 820px;
+    height: calc(100vh + 5rem);
     position: absolute;
     top: 0;
     left: 0;
@@ -20,7 +18,9 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-  max-width: 1120px;
+  max-width: 1280px;
+  width: 100%;
+  padding: 2rem;
   height: calc(100vh - 5rem);
   margin: 0 auto;
 

@@ -1,8 +1,5 @@
 import Head from "next/head";
-import { Home } from "../components/Home";
-import { About } from "../components/About";
-import { Product } from "../components/Product";
-import { Team } from "../components/Team";
+import { Layout } from "../components/Layout";
 
 export default function MainHome() {
   return (
@@ -12,10 +9,7 @@ export default function MainHome() {
       </Head>
 
       <main>
-        <Home />
-        <About />
-        <Product />
-        <Team />
+        <Layout />
       </main>
     </>
   );
