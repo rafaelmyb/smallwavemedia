@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import smallWaveImg from "../../public/images/Small Wave Image.png";
+import logoImg from "../../public/images/logo.png";
+import smallwaveImg from '../../public/images/Small Wave.svg';
 
 import { Section, Container, Header, TextContent } from "./styles";
 
@@ -11,16 +12,15 @@ export function Home() {
 
       <Container>
         <Header>
-          <Image src={smallWaveImg} alt="Logo Small Wave" />
+          <span><Image src={logoImg} alt="Logo Small Wave" /></span>
+          <Image src={smallwaveImg} alt="Small Wave" />
         </Header>
         <TextContent>
           <h1>
-            O gerenciamento de mídia completo que a sua marca precisa para
+            O gerenciamento de mídia <span>completo</span> que a sua marca <span>precisa</span> para
             decolar.
           </h1>
           <p>Propagando ondas por onde servimos</p>
-{/* 
-          <button>CONTRATAR</button> */}
         </TextContent>
       </Container>
     </Section>

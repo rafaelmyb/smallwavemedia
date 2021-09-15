@@ -1,47 +1,46 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  max-width: 100%;
-  height: 700px;
-  padding: 0 2rem;
-
+  width: 100%;
+  height: 748px;
   background: var(--gray-800);
+  display: flex;
+  align-items: center;
 `;
 
 export const Container = styled.div`
   max-width: 1280px;
   width: 100%;
+  height: 100%;
   padding: 4.5rem 2rem;
-  height: 700px;
   margin: 0 auto;
-  
-  display: flex;
-  align-items: center;
 
  h1 {
-   font-size: 2.875rem;
-   font-weight: 800;
-   line-height: 3.4375rem;
-   width: 450px;
-   margin-top: 1rem;
+   width: 100%;
  }
 `;
 
 export const Content = styled.div`
-  width: 1280px;
-  height: 600px;
+  width: 100%;
+  height: 555px;
+
+  hr {
+    margin-top: 3rem;
+    width: 40px;
+  }
 `;
 
 export const ContainerSquad = styled.div`
   display: flex;
   justify-content: space-between;
+  height: 400px;
 
   margin-top: 3rem;
 `;
 
 export const Squad = styled.div`
   width: 352px;
-  height: 420px;
+  height: 100%;
 
   img {
     border-radius: 4px;
@@ -59,6 +58,7 @@ export const Squad = styled.div`
     width: 352px;
     margin-top: 1.75rem;
     margin-bottom: 1.275rem;
+    color: var(--gray-100);
   }
 
   p {

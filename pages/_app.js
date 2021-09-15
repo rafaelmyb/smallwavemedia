@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return(
     <>
       <GlobalStyle />
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
     </>
   )

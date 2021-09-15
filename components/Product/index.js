@@ -9,7 +9,8 @@ export function Product() {
     <Section id={"products"}>
       <Container>
         <Content>
-          <h1>Como a Small Wave pode te servir</h1>
+          <h1>Como a Small Wave <br /> pode te servir</h1>
+          <hr />
           <ContainerSquad>
             <Squad>
               <Image 

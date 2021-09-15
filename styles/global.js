@@ -25,6 +25,8 @@ export default createGlobalStyle`
     --gray-800: #0F0F10;
     --gray-900: #09090A;
 
+    scrollbar-color: #68777b #0f0f10;
+    scrollbar-width: 12px;
   }
 
   @media (max-width: 1080px) {
@@ -40,18 +42,26 @@ export default createGlobalStyle`
   }
 
   body {
-    color: var(--gray-100);
+    color: var(--white);
 
     &::-webkit-scrollbar {
-      width: 8px;
+      width: 12px;
     } 
 
     &::-webkit-scrollbar-track {
-      background: var(--gray-700);
+      background: #0f0f10;
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: var(--gray-400);
+      background-color: #68777b;
+      border-radius: 20px;
+      border: 3px solid #0f0f10;
+    }
+
+    h1 {
+      font-size: 2.875rem;
+      font-weight: 800;
+      line-height: 3.4375rem;
     }
   }
 
