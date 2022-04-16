@@ -36,6 +36,13 @@ export const Container = styled.div`
 
   position: relative;
   top: -1.5rem;
+
+  @media (max-width: 425px) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const Header = styled.div`
@@ -50,9 +57,12 @@ export const Header = styled.div`
     }
   }
 
-  @media (max-width: 378px) {
+  @media (max-width: 425px) {
     text-align: center;
+    margin-bottom: 80px;
+  }
 
+  @media (max-width: 378px) {
     span {
       img {
         display: none;
@@ -89,7 +99,7 @@ export const TextContent = styled.div`
   @media (max-width: 620px) {
     text-align: center;
     margin-top: 0;
-    height: 100%;
+    height: 50%;
 
     h1 {
       font-size: 30px;

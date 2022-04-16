@@ -80,7 +80,7 @@ export const TextContent = styled.div`
     }
 
     p {
-      margin-top: 40px;
+      margin-top: 24px;
     }
   }
 

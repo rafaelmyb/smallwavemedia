@@ -55,7 +55,7 @@ export default function Product({ description }) {
               }
               onClick={() => setActiveButton(1)}
             >
-              Produção e edição de vídeos em geral
+              Produção e edição de vídeos
             </button>
             <button
               style={

@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
-// interface ButtonStateProps {
-//   buttonstate: string;
-// }
-
 export const Section = styled.section`
   width: 100%;
   max-height: 876px;
   height: 100%;
   background: ${({ theme }) => theme.colors.black[600]};
   padding: 160px 0;
+
+  @media (max-width: 820px) {
+    max-height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
 `;
 
 export const Container = styled.div`
@@ -26,7 +30,8 @@ export const HeaderText = styled.div`
   align-items: center;
 
   h1 {
-    width: 466px;
+    max-width: 466px;
+    width: 100%;
   }
 
   p {
@@ -35,6 +40,25 @@ export const HeaderText = styled.div`
 
     span {
       display: inline-block;
+    }
+  }
+
+  @media (max-width: 1236px) {
+    padding: 0 32px;
+  }
+
+  @media (max-width: 820px) {
+    p {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: inline-block;
+    margin-bottom: 40px;
+
+    p {
+      margin-top: 24px;
     }
   }
 `;
@@ -46,6 +70,7 @@ export const Content = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
+  display: flex;
   
   button {
     font-size: 18px;
@@ -53,11 +78,26 @@ export const HeaderContainer = styled.div`
     line-height: 27px;
     color: ${({ theme }) => theme.colors.light};
     background: transparent;
-    width: 412px;
+    max-width: 412px;
+    width: 100%;
     height: 64px;
     position: relative;
     top: 1px;
     z-index: 1;
+    padding: 0 8px;
+
+    @media (max-width: 639px) {
+      height: 96px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 412px) {
+      height: 120px;
+    }
+
+    @media (max-width: 412px) {
+      height: 120px;
+    }
   }
 `;
 
@@ -73,7 +113,8 @@ export const ServicesContainer = styled.div`
   background: #0f0f10;
 
   img {
-    width: 352px;
+    max-width: 352px;
+    width: 100%;
     height: 140px;
     border-radius: 4px;
   }
@@ -81,8 +122,20 @@ export const ServicesContainer = styled.div`
   p {
     line-height: 27px;
     font-weight: 600;
-    width: 679px;
+    max-width: 679px;
     text-align: left;
     margin-left: 48px;
+  }
+
+  @media (max-width: 820px) {
+    display: inline-block;
+    text-align: center;
+    max-height: 100%;
+    
+    p {
+      margin-left: 0;
+      margin-top: 24px;
+      text-align: center;
+    }
   }
 `;
