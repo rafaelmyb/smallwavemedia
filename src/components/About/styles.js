@@ -56,6 +56,7 @@ export const TextContent = styled.div`
 
   h1 {
     text-align: center;
+    font-size: 48px;
   }
 
   p {

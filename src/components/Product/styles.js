@@ -32,10 +32,12 @@ export const HeaderText = styled.div`
   h1 {
     max-width: 466px;
     width: 100%;
+    font-size: 48px;
   }
 
   p {
     width: 476px;
+    font-weight: 500;
     line-height: 27px;
 
     span {
