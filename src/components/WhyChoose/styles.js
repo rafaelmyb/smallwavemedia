@@ -20,6 +20,10 @@ export const HeaderText = styled.div`
 
   h1 {
     font-size: 48px;
+
+    span {
+      opacity: 75%;
+    }
   }
 
   p {

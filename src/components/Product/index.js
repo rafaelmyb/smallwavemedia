@@ -18,7 +18,7 @@ export default function Product({ description }) {
     <Section>
       <Container>
         <HeaderText>
-          <h1>Como a Small Wave pode te servir</h1>
+          <h1>Como a Small Wave <span>pode te servir</span></h1>
           <p>
             Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum
             <span>

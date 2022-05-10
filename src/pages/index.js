@@ -18,8 +18,8 @@ export default function Home() {
         <Hero />
         <About />
         <Product description={productDescription[0]} />
-        <WhyChoose />
-        {/* <Team /> */}
+        {/* <WhyChoose /> */}
+        <Team />
       </main>
     </>
   );

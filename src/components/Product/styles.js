@@ -33,6 +33,10 @@ export const HeaderText = styled.div`
     max-width: 466px;
     width: 100%;
     font-size: 48px;
+
+    span {
+      opacity: 75%;
+    }
   }
 
   p {

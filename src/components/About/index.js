@@ -9,7 +9,7 @@ export default function About() {
     <Section>
       <Container>
         <TextContent>
-          <h1>O que é a Small Wave?</h1>
+          <h1>O que é a <span>Small Wave?</span></h1>
           <p>Somos uma equipe forjada em meio a crise.</p>
           <p>Criamos soluções para empresas e igrejas para se comunicarem da forma mais simples e ágil com o seu público, seja por fotos, banners, frases ou vídeos.</p>
           <p>Nos dedicamos em fazer o seu produto conhecido pelo público, com a criação e gestão da sua identidade e conteúdo, além de lhe inserirmos na web com nossas ferramentas.</p>
