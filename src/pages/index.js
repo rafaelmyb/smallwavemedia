@@ -6,6 +6,8 @@ import WhyChoose from "../components/WhyChoose";
 import Team from "../components/Team";
 
 import productDescription from '../components/productDescription';
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -20,7 +22,10 @@ export default function Home() {
         <Product description={productDescription[0]} />
         {/* <WhyChoose /> */}
         <Team />
+        <Contact />
       </main>
+
+      <Footer />
     </>
   );
 }

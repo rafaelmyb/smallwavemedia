@@ -7,7 +7,7 @@ import { Section, Container, Header, TextContent } from "./styles";
 
 export default function Hero() {
   return (
-    <Section>
+    <Section id="hero">
       <video src="/videos/hero.mp4" autoPlay loop muted></video>
 
       <Container>

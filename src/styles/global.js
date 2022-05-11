@@ -43,6 +43,9 @@ export default createGlobalStyle`
 
   body {
     color: var(--white);
+    -webkit-font-feature-settings: "lnum";
+    -moz-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
 
     &::-webkit-scrollbar {
       width: 12px;
