@@ -19,7 +19,7 @@ export default function Home() {
         <Hero />
         <About />
         <Product description={productDescription[0]} />
-        {/* <WhyChoose /> */}
+        <WhyChoose />
         <Team />
         <Contact />
       </main>

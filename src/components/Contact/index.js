@@ -76,7 +76,7 @@ export default function Contact() {
         <FormContainer onSubmit={handleSubmit}>
           <Input
             type="text"
-            placeholder="Nome Completo"
+            placeholder="Nome completo"
             width="320px"
             value={name}
             onChange={(event) => setName(event.target.value)}
@@ -89,7 +89,6 @@ export default function Contact() {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             required
-
           />
           <Input
             type="text"
