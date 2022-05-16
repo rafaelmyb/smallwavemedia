@@ -24,7 +24,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [messageSent, setMessageSent] = useState("fail");
+  const [messageSent, setMessageSent] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const content = `
     Nome: ${name},

@@ -15,7 +15,6 @@ export default function Home() {
       <Head>
         <title>Small Wave</title>
       </Head>
-
       <main>
         <Hero />
         <About />
@@ -24,8 +23,7 @@ export default function Home() {
         <Team />
         <Contact />
       </main>
-
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

@@ -21,6 +21,7 @@ export const Content = styled.div`
     font-weight: 800;
     color: ${({ theme }) => theme.colors.light};
     opacity: 75%;
+    margin-right: 24px;
   }
 
   button {

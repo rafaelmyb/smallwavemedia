@@ -33,10 +33,6 @@ export const HeaderText = styled.div`
     max-width: 466px;
     width: 100%;
     font-size: 48px;
-
-    span {
-      opacity: 75%;
-    }
   }
 
   p {
@@ -143,5 +139,9 @@ export const ServicesContainer = styled.div`
       margin-top: 24px;
       text-align: center;
     }
+  }
+
+  @media (max-width: 510px) {
+    padding: 68px 48px;
   }
 `;

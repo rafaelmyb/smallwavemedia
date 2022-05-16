@@ -11,7 +11,7 @@ export const Container = styled.div`
   margin: 0 auto;
 
   h1 {
-    font-size: 48px;
+    font-size: 48px;   
   }
 
   @media (max-width: 768px) {
@@ -40,7 +40,7 @@ export const FormContainer = styled.form`
     max-width: 392px;
     margin-left: auto;
     margin-right: auto;
-    
+
     input {
       margin-right: 0;
       max-width: 100%;
