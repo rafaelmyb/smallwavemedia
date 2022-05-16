@@ -18,10 +18,15 @@ export default styled.button`
   }
 
   &[disabled] {
-    cursor: default;
+    opacity: 0.5;
+    cursor: wait;
 
     &:hover {
       filter: none;
     }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
   }
 `;

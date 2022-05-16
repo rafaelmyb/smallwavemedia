@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 import Button from "../Button";
 import Input from "../Input";
-import formatPhone from '../../utils/formatPhone';
-import { sendContactMail } from '../../services/sendEmail';
+import formatPhone from "../../utils/formatPhone";
+import { sendContactMail } from "../../services/sendEmail";
 
 import instagramImg from "../../../public/images/instagram.svg";
 import facebookImg from "../../../public/images/fb.svg";
@@ -16,12 +16,16 @@ import {
   AddressContainer,
   CardContainer,
   Card,
+  ButtonContainer,
+  SubmitMessage,
 } from "./styles";
 
 export default function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [messageSent, setMessageSent] = useState("fail");
+  const [isLoading, setIsLoading] = useState(false);
   const content = `
     Nome: ${name},
     E-mail: ${email},
@@ -32,30 +36,30 @@ export default function Contact() {
     event.preventDefault();
 
     try {
+      setIsLoading(true);
+
       await sendContactMail(name, email, content);
 
-      // setMessageSent("success");
-      console.log('sucess');
+      setMessageSent("success");
       setName("");
       setEmail("");
       setPhone("");
-      // setTimeout(() => {
-      //   setMessageSent("");
-      // }, 5000);
+      setTimeout(() => {
+        setMessageSent("");
+      }, 5000);
     } catch {
-      // setMessageSent("fail");
+      setMessageSent("fail");
 
       setName("");
       setEmail("");
       setPhone("");
-      // setTimeout(() => {
-      //   setMessageSent("");
-      // }, 5000);
-      console.log('error')
+      setTimeout(() => {
+        setMessageSent("");
+      }, 5000);
     }
-    // finally {
-    //   setIsLoading(false);
-    // }
+    finally {
+      setIsLoading(false);
+    }
   }
 
   function handlePhoneChange(event) {
@@ -76,6 +80,7 @@ export default function Contact() {
             width="320px"
             value={name}
             onChange={(event) => setName(event.target.value)}
+            required
           />
           <Input
             type="email"
@@ -83,6 +88,8 @@ export default function Contact() {
             width="320px"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
+            required
+
           />
           <Input
             type="text"
@@ -91,8 +98,19 @@ export default function Contact() {
             value={phone}
             onChange={handlePhoneChange}
             maxLength="15"
+            required
           />
-          <Button type='submit'>Enviar</Button>
+          <ButtonContainer>
+            <Button type="submit" disabled={isLoading}>Enviar</Button>
+            {messageSent === "success" && (
+              <SubmitMessage success>Contato recebido! Deixe conosco agora.</SubmitMessage>
+            )}
+            {messageSent === "fail" && (
+              <SubmitMessage fail>
+                Algo de errado aconteceu! Tente novamente.
+              </SubmitMessage>
+            )}
+          </ButtonContainer>
         </FormContainer>
 
         <AddressContainer>
@@ -106,7 +124,7 @@ export default function Contact() {
             </Card>
             <Card>
               <a href="mailto:danielgomes@smallwave.com.br">
-                danielgomes@smallwave.com.br
+                danielgomes<wbr/>@smallwave<wbr />.com.br
               </a>
               <hr />
               <a href="tel:+5569981011201">(69) 9 8101-1201</a>

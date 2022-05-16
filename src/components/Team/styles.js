@@ -9,7 +9,7 @@ export const Section = styled.section`
     content: "";
     height: 1px;
     max-width: 1236px;
-    width: 100%;
+    width: calc(100% - 64px);
     background: ${({ theme }) => theme.colors.light};
     display: flex;
     align-items: center;
@@ -26,12 +26,32 @@ export const Container = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media (max-width: 1032px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    padding: 80px 32px;
+  }
+
+  @media (max-width: 722px) {
+    height: 100%;
+  }
 `;
 
 export const AsideText = styled.div`
   font-size: 48px;
   font-weight: 800;
   width: 420px;
+  margin-right: 24px;
+
+  @media (max-width: 1032px) {
+    max-width: 720px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 80px auto;
+  }
 `;
 
 export const TextHeader = styled.div`
@@ -53,17 +73,50 @@ export const CardTeam = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1032px) {
+    margin: 0 auto;
+    max-width: 720px;
+    width: 100%;
+  }
+
+  @media (max-width: 722px) {
+    flex-wrap: wrap;
+    height: 100%;
+    width: 450px;
+  }
+
+  @media (max-width: 514px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const Card = styled.div`
   position: relative;
   display: flex;
   align-items: flex-end;
+  
+  & + div {
+    margin-left: 24px;
+  }
 
   img {
     width: 204px;
     height: 312px;
     border-radius: 4px;
+  }
+
+  @media (max-width: 722px) {
+    &:nth-child(3) {
+      margin: 48px auto 0 auto;
+    }
+  }
+
+  @media (max-width: 514px) {
+    &:nth-child(2) {
+      margin: 48px 0 0 0;
+    }
   }
 `;
 

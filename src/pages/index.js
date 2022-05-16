@@ -22,7 +22,7 @@ export default function Home() {
         <Product description={productDescription[0]} />
         {/* <WhyChoose /> */}
         <Team />
-        {/* <Contact /> */}
+        <Contact />
       </main>
 
       {/* <Footer /> */}

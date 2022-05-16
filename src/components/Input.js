@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export default styled.input`
   background: ${({ theme }) => theme.colors.black[600]};
-  width: ${({ width }) => width};
+  max-width: ${({ width }) => width};
+  width: 100%;
   height: 62px;
   border: none;
   border-radius: 4px;
