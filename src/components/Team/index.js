@@ -1,3 +1,5 @@
+import { revealFromBottom, revealFromLeft } from "../Animation";
+
 import logoImg from "../../../public/images/logo.svg";
 import danielImg from "../../../public/images/daniel.png";
 import joaoImg from "../../../public/images/joao.png";
@@ -18,7 +20,7 @@ export default function Team() {
   return (
     <Section>
       <Container>
-        <AsideText>
+        <AsideText variants={revealFromLeft}>
           <TextHeader>
             <img src={logoImg.src} alt="" />
             <small>Small Wave team</small>
@@ -27,7 +29,7 @@ export default function Team() {
         </AsideText>
 
         <CardTeam>
-          <Card>
+          <Card variants={revealFromBottom}>
             <img src={danielImg.src} alt="Daniel Gomes" loading="lazy"/>
             <CardDescription>
               <span>
@@ -39,7 +41,7 @@ export default function Team() {
               </a>
             </CardDescription>
           </Card>
-          <Card>
+          <Card variants={revealFromBottom}>
             <img src={joaoImg.src} alt="João Pedro Gomes" loading="lazy"/>
             <CardDescription>
               <span>
@@ -51,7 +53,7 @@ export default function Team() {
               </a>
             </CardDescription>
           </Card>
-          <Card>
+          <Card variants={revealFromBottom}>
             <img src={rafaelImg.src} alt="Rafael Yamada" loading="lazy"/>
             <CardDescription>
               <span>

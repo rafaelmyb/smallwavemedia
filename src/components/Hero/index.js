@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { revealFromLeft } from "../Animation";
 
 import logoImg from "../../../public/images/logo.png";
 import smallwaveImg from '../../../public/images/Small Wave.svg';
@@ -11,11 +11,11 @@ export default function Hero() {
       <video src="/videos/hero.mp4" autoPlay loop muted></video>
 
       <Container>
-        <Header>
+        <Header variants={revealFromLeft}>
           <span><img src={logoImg.src} alt="Logo Small Wave" loading="lazy"/></span>
           <img src={smallwaveImg.src} alt="Small Wave" loading="lazy"/>
         </Header>
-        <TextContent>
+        <TextContent variants={revealFromLeft}>
           <h1>
             O gerenciamento de mídia <span>completo</span> que a sua marca <span>precisa</span> para
             decolar.

@@ -1,5 +1,6 @@
+import { revealFromBottom } from "../Animation";
+
 import retangleImg from "../../../public/images/retangle.svg";
-import elipseImg from "../../../public/images/elipse.svg";
 
 import {
   Section,
@@ -19,7 +20,7 @@ export default function WhyChoose() {
   return (
     <Section>
       <Container>
-        <HeaderText>
+        <HeaderText variants={revealFromBottom}>
           <h1>Por que escolher a Small Wave?</h1>
           <p>Lorem ipsum dollor siamet</p>
         </HeaderText>

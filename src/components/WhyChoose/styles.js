@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
 export const Section = styled.section`
   width: 100%;
@@ -19,7 +20,11 @@ export const Container = styled.div`
   padding: 0 32px;
 `;
 
-export const HeaderText = styled.div`
+export const HeaderText = styled(motion.div).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   text-align: center;
   margin-bottom: 80px;
 

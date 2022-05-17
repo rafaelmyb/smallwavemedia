@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Section = styled.section`
   background: ${({ theme }) => theme.colors.black[600]};
@@ -19,7 +20,11 @@ export const Container = styled.div`
   }
 `;
 
-export const FormContainer = styled.form`
+export const FormContainer = styled(motion.form).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   width: 100%;
   background: ${({ theme }) => theme.colors.black[500]};
   margin-top: 60px;
@@ -60,7 +65,11 @@ export const AddressContainer = styled.div`
   }
 `;
 
-export const CardContainer = styled.div`
+export const CardContainer = styled(motion.div).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   margin-top: 60px;
   display: flex;
   align-items: center;

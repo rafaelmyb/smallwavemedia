@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-import squadImg from "../../../public/images/squad.png";
+import { motion } from "framer-motion";
+
+import { revealFromLeft, revealFromRight, revealFromBottom } from "../Animation";
 
 import {
   Section,
@@ -18,16 +20,26 @@ export default function Product({ description }) {
     <Section>
       <Container>
         <HeaderText>
-          <h1>Como a Small Wave pode te servir</h1>
-          <p>
+          <motion.h1
+            variants={revealFromLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >Como a Small Wave pode te servir</motion.h1>
+          <motion.p
+            variants={revealFromRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum
             <span>
               Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum
             </span>
-          </p>
+          </motion.p>
         </HeaderText>
 
-        <Content>
+        <Content variants={revealFromBottom}>
           <HeaderContainer>
             <button
               style={

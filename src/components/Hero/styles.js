@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
 export const Section = styled.main`
   height: 100vh;
@@ -45,7 +46,11 @@ export const Container = styled.div`
   }
 `;
 
-export const Header = styled.div`
+export const Header = styled(motion.div).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   width: 100%;
 
   span {
@@ -76,7 +81,11 @@ export const Header = styled.div`
   }
 `;
 
-export const TextContent = styled.div`
+export const TextContent = styled(motion.div).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   display: flex;
   height: 220px;
   flex-direction: column;

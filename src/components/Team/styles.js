@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
 export const Section = styled.section`
   background: ${({ theme }) => theme.colors.black[600]};
@@ -40,7 +41,11 @@ export const Container = styled.div`
   }
 `;
 
-export const AsideText = styled.div`
+export const AsideText = styled(motion.div).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   font-size: 48px;
   font-weight: 800;
   width: 420px;
@@ -92,7 +97,11 @@ export const CardTeam = styled.div`
   }
 `;
 
-export const Card = styled.div`
+export const Card = styled(motion.div).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   position: relative;
   display: flex;
   align-items: flex-end;

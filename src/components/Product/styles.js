@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { motion } from "framer-motion";
+
 export const Section = styled.section`
   width: 100%;
   max-height: 876px;
@@ -65,7 +67,11 @@ export const HeaderText = styled.div`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.div).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   max-width: 1236px;
   width: 100%;
   margin: 0 auto;

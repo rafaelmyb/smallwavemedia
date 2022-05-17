@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { motion } from "framer-motion";
+
 import Button from "../Button";
 import Input from "../Input";
 import formatPhone from "../../utils/formatPhone";
@@ -19,6 +21,7 @@ import {
   ButtonContainer,
   SubmitMessage,
 } from "./styles";
+import { revealFromBottom, revealFromLeft, revealFromRight } from "../Animation";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -68,11 +71,19 @@ export default function Contact() {
   return (
     <Section>
       <Container>
-        <h1>
+        <motion.h1
+          variants={revealFromLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           Quer falar conosco? <br /> Nós entramos em contato.
-        </h1>
+        </motion.h1>
 
-        <FormContainer onSubmit={handleSubmit}>
+        <FormContainer
+          onSubmit={handleSubmit}
+          variants={revealFromBottom}
+          >
           <Input
             type="text"
             placeholder="Nome completo"
@@ -116,9 +127,14 @@ export default function Contact() {
         </FormContainer>
 
         <AddressContainer>
-          <h1>Ou nos encontre por aqui</h1>
+          <motion.h1
+            variants={revealFromRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >Ou nos encontre por aqui</motion.h1>
 
-          <CardContainer>
+          <CardContainer variants={revealFromBottom}>
             <Card>
               <a href="http://maps.google.com/?q=Tv. Petrônio Barcelos, nº 3532, Bairro Liberdade, CEP 76.803-863">
                 Tv. Petrônio Barcelos, nº 3532, B. Liberdade – CEP 76.803-863
