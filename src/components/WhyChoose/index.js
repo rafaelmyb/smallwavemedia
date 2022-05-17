@@ -12,6 +12,7 @@ import {
   EmptyContainer,
   Icon,
   Description,
+  MobileContent,
 } from "./styles";
 
 export default function WhyChoose() {
@@ -30,13 +31,13 @@ export default function WhyChoose() {
                 <img src={retangleImg.src} alt="Icon" />
               </Icon>
               <Description>
+                <img src={retangleImg.src} alt="Icon" />
                 <strong>Title Text Lorem Ipsum</strong>
                 <p>
                   Lorem Impsum dollor siamet dollor lorem siamet ipsum dollor{" "}
                 </p>
               </Description>
               <hr />
-              {/* <img src={elipseImg.src} alt="Elipse" /> */}
             </LeftContainer>
             <EmptyContainer />
 
@@ -47,6 +48,8 @@ export default function WhyChoose() {
                 <img src={retangleImg.src} alt="Icon" />
               </Icon>
               <Description>
+                <img src={retangleImg.src} alt="Icon" />
+
                 <strong>Title Text Lorem Ipsum</strong>
                 <p>
                   Lorem Impsum dollor siamet dollor lorem siamet ipsum dollor{" "}
@@ -59,6 +62,8 @@ export default function WhyChoose() {
                 <img src={retangleImg.src} alt="Icon" />
               </Icon>
               <Description>
+                <img src={retangleImg.src} alt="Icon" />
+
                 <strong>Title Text Lorem Ipsum</strong>
                 <p>
                   Lorem Impsum dollor siamet dollor lorem siamet ipsum dollor{" "}
@@ -75,6 +80,8 @@ export default function WhyChoose() {
                 <img src={retangleImg.src} alt="Icon" />
               </Icon>
               <Description>
+                <img src={retangleImg.src} alt="Icon" />
+
                 <strong>Title Text Lorem Ipsum</strong>
                 <p>
                   Lorem Impsum dollor siamet dollor lorem siamet ipsum dollor{" "}
@@ -82,6 +89,72 @@ export default function WhyChoose() {
               </Description>
             </RightContainer>
           </TrailContent>
+
+          <MobileContent>
+            <EmptyContainer />
+            <RightContainer>
+              <hr />
+              <Icon>
+                <img src={retangleImg.src} alt="Icon" />
+              </Icon>
+              <Description>
+                <img src={retangleImg.src} alt="Icon" />
+
+                <strong>Title Text Lorem Ipsum</strong>
+                <p>
+                  Lorem Impsum dollor siamet dollor lorem siamet ipsum dollor{" "}
+                </p>
+              </Description>
+            </RightContainer>
+
+            <LeftContainer>
+              <Icon>
+                <img src={retangleImg.src} alt="Icon" />
+              </Icon>
+              <Description>
+                <img src={retangleImg.src} alt="Icon" />
+
+                <strong>Title Text Lorem Ipsum</strong>
+                <p>
+                  Lorem Impsum dollor siamet dollor lorem siamet ipsum dollor{" "}
+                </p>
+              </Description>
+              <hr />
+            </LeftContainer>
+            <EmptyContainer />
+            <EmptyContainer />
+
+            <RightContainer>
+              <hr />
+              <Icon>
+                <img src={retangleImg.src} alt="Icon" />
+              </Icon>
+              <Description>
+                <img src={retangleImg.src} alt="Icon" />
+
+                <strong>Title Text Lorem Ipsum</strong>
+                <p>
+                  Lorem Impsum dollor siamet dollor lorem siamet ipsum dollor{" "}
+                </p>
+              </Description>
+            </RightContainer>
+
+            <LeftContainer>
+              <Icon>
+                <img src={retangleImg.src} alt="Icon" />
+              </Icon>
+              <Description>
+                <img src={retangleImg.src} alt="Icon" />
+
+                <strong>Title Text Lorem Ipsum</strong>
+                <p>
+                  Lorem Impsum dollor siamet dollor lorem siamet ipsum dollor{" "}
+                </p>
+              </Description>
+              <hr />
+            </LeftContainer>
+            <EmptyContainer />
+          </MobileContent>
         </Content>
       </Container>
     </Section>

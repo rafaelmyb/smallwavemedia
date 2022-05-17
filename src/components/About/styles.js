@@ -36,7 +36,7 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-  max-width: 1280px;
+  max-width: 1300px;
   width: 100%;
   padding: 160px 32px;
   margin: 0 auto;
