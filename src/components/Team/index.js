@@ -28,38 +28,38 @@ export default function Team() {
 
         <CardTeam>
           <Card>
-            <img src={danielImg.src} alt="Daniel Gomes" />
+            <img src={danielImg.src} alt="Daniel Gomes" loading="lazy"/>
             <CardDescription>
               <span>
                 <p>Daniel Gomes</p>
                 <small>Fundador e CEO</small>
               </span>
               <a href="https://www.instagram.com/danielgomessw/">
-                <img src={instagramImg.src} alt="Instagram" />
+                <img src={instagramImg.src} alt="Instagram" loading="lazy"/>
               </a>
             </CardDescription>
           </Card>
           <Card>
-            <img src={joaoImg.src} alt="João Pedro Gomes" />
+            <img src={joaoImg.src} alt="João Pedro Gomes" loading="lazy"/>
             <CardDescription>
               <span>
                 <p>João Pedro Gomes</p>
                 <small>Sócio e CFO</small>
               </span>
               <a href="https://www.instagram.com/joaopedrosg1/">
-                <img src={instagramImg.src} alt="Instagram" />
+                <img src={instagramImg.src} alt="Instagram" loading="lazy"/>
               </a>
             </CardDescription>
           </Card>
           <Card>
-            <img src={rafaelImg.src} alt="Rafael Yamada" />
+            <img src={rafaelImg.src} alt="Rafael Yamada" loading="lazy"/>
             <CardDescription>
               <span>
                 <p>Rafael Yamada</p>
                 <small>Sócio e Pogramador</small>
               </span>
               <a href="https://www.instagram.com/_rafael_yamada/">
-                <img src={instagramImg.src} alt="Instagram" />
+                <img src={instagramImg.src} alt="Instagram" loading="lazy"/>
               </a>
             </CardDescription>
           </Card>

@@ -12,8 +12,8 @@ export default function Hero() {
 
       <Container>
         <Header>
-          <span><img src={logoImg.src} alt="Logo Small Wave" /></span>
-          <img src={smallwaveImg.src} alt="Small Wave" />
+          <span><img src={logoImg.src} alt="Logo Small Wave" loading="lazy"/></span>
+          <img src={smallwaveImg.src} alt="Small Wave" loading="lazy"/>
         </Header>
         <TextContent>
           <h1>

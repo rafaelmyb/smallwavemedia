@@ -56,8 +56,7 @@ export default function Contact() {
       setTimeout(() => {
         setMessageSent("");
       }, 5000);
-    }
-    finally {
+    } finally {
       setIsLoading(false);
     }
   }
@@ -100,9 +99,13 @@ export default function Contact() {
             required
           />
           <ButtonContainer>
-            <Button type="submit" disabled={isLoading}>Enviar</Button>
+            <Button type="submit" disabled={isLoading}>
+              Enviar
+            </Button>
             {messageSent === "success" && (
-              <SubmitMessage success>Contato recebido! Deixe conosco agora.</SubmitMessage>
+              <SubmitMessage success>
+                Contato recebido! Deixe conosco agora.
+              </SubmitMessage>
             )}
             {messageSent === "fail" && (
               <SubmitMessage fail>
@@ -123,20 +126,24 @@ export default function Contact() {
             </Card>
             <Card>
               <a href="mailto:danielgomes@smallwave.com.br">
-                danielgomes<wbr/>@smallwave<wbr />.com.br
+                danielgomes
+                <wbr />
+                @smallwave
+                <wbr />
+                .com.br
               </a>
               <hr />
               <a href="tel:+5569981011201">(69) 9 8101-1201</a>
             </Card>
             <Card>
               <a href="https://www.instagram.com/smallwave.ro/">
-                <img src={instagramImg.src} alt="Instagram" />
+                <img src={instagramImg.src} alt="Instagram" loading="lazy" />
               </a>
               <a href="https://www.facebook.com/Small-Wave-M%C3%ADdia-103819535104102">
-                <img src={facebookImg.src} alt="Facebook" />
+                <img src={facebookImg.src} alt="Facebook" loading="lazy" />
               </a>
               <a href="https://wa.me/5569981011201">
-                <img src={whatsappImg.src} alt="Whatsapp" />
+                <img src={whatsappImg.src} alt="Whatsapp" loading="lazy" />
               </a>
             </Card>
           </CardContainer>

@@ -74,7 +74,7 @@ export default function Product({ description }) {
           </HeaderContainer>
 
           <ServicesContainer>
-            <img src={description.link[activeButton].image} alt="Squad Img" />
+            <img src={description.link[activeButton].image} loading="lazy" alt="Squad Img" />
             <p>
               {description.link[activeButton].description}
             </p>
