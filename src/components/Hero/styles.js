@@ -62,6 +62,10 @@ export const Header = styled(motion.div).attrs(() => ({
     }
   }
 
+  @media (max-width: 620px) {
+    margin-bottom: 80px;
+  }
+
   @media (max-width: 425px) {
     text-align: center;
     margin-bottom: 80px;

@@ -174,7 +174,11 @@ export const RightContainer = styled.li`
   }
 `;
 
-export const Icon = styled.div`
+export const Icon = styled(motion.div).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   margin-right: 30px;
 
   @media (max-width: 1063px) {
@@ -182,7 +186,11 @@ export const Icon = styled.div`
   }
 `;
 
-export const Description = styled.div`
+export const Description = styled(motion.div).attrs(() => ({
+  initial: "hidden",
+  whileInView: "visible",
+  viewport: { once: true },
+}))`
   max-width: 267px;
   width: 100%;
   display: flex;

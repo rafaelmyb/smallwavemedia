@@ -1,4 +1,4 @@
-import { revealFromBottom } from "../Animation";
+import { revealFromBottom, revealFromLeft, revealFromLeft2, revealFromLeft6, revealFromRight, revealFromRight2, revealFromRight4 } from "../Animation";
 
 import retangleImg from "../../../public/images/retangle.svg";
 
@@ -28,10 +28,10 @@ export default function WhyChoose() {
         <Content>
           <TrailContent>
             <LeftContainer>
-              <Icon>
+              <Icon variants={revealFromLeft}>
                 <img src={retangleImg.src} alt="Icon" />
               </Icon>
-              <Description>
+              <Description variants={revealFromLeft}>
                 <img src={retangleImg.src} alt="Icon" />
                 <strong>Title Text Lorem Ipsum</strong>
                 <p>
@@ -45,10 +45,10 @@ export default function WhyChoose() {
             <EmptyContainer />
             <RightContainer>
               <hr />
-              <Icon>
+              <Icon variants={revealFromRight2}>
                 <img src={retangleImg.src} alt="Icon" />
               </Icon>
-              <Description>
+              <Description variants={revealFromRight2}>
                 <img src={retangleImg.src} alt="Icon" />
 
                 <strong>Title Text Lorem Ipsum</strong>
@@ -59,10 +59,10 @@ export default function WhyChoose() {
             </RightContainer>
 
             <LeftContainer>
-              <Icon>
+              <Icon variants={revealFromLeft2}>
                 <img src={retangleImg.src} alt="Icon" />
               </Icon>
-              <Description>
+              <Description variants={revealFromLeft2}>
                 <img src={retangleImg.src} alt="Icon" />
 
                 <strong>Title Text Lorem Ipsum</strong>
@@ -77,10 +77,10 @@ export default function WhyChoose() {
             <EmptyContainer />
             <RightContainer>
               <hr />
-              <Icon>
+              <Icon variants={revealFromRight4}>
                 <img src={retangleImg.src} alt="Icon" />
               </Icon>
-              <Description>
+              <Description variants={revealFromRight4}>
                 <img src={retangleImg.src} alt="Icon" />
 
                 <strong>Title Text Lorem Ipsum</strong>
@@ -95,10 +95,7 @@ export default function WhyChoose() {
             <EmptyContainer />
             <RightContainer>
               <hr />
-              <Icon>
-                <img src={retangleImg.src} alt="Icon" />
-              </Icon>
-              <Description>
+              <Description variants={revealFromRight2}>
                 <img src={retangleImg.src} alt="Icon" />
 
                 <strong>Title Text Lorem Ipsum</strong>
@@ -109,10 +106,7 @@ export default function WhyChoose() {
             </RightContainer>
 
             <LeftContainer>
-              <Icon>
-                <img src={retangleImg.src} alt="Icon" />
-              </Icon>
-              <Description>
+              <Description variants={revealFromLeft2}>
                 <img src={retangleImg.src} alt="Icon" />
 
                 <strong>Title Text Lorem Ipsum</strong>
@@ -127,10 +121,7 @@ export default function WhyChoose() {
 
             <RightContainer>
               <hr />
-              <Icon>
-                <img src={retangleImg.src} alt="Icon" />
-              </Icon>
-              <Description>
+              <Description variants={revealFromRight4}>
                 <img src={retangleImg.src} alt="Icon" />
 
                 <strong>Title Text Lorem Ipsum</strong>
@@ -141,10 +132,7 @@ export default function WhyChoose() {
             </RightContainer>
 
             <LeftContainer>
-              <Icon>
-                <img src={retangleImg.src} alt="Icon" />
-              </Icon>
-              <Description>
+              <Description variants={revealFromLeft6}>
                 <img src={retangleImg.src} alt="Icon" />
 
                 <strong>Title Text Lorem Ipsum</strong>
