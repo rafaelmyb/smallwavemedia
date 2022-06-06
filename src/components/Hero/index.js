@@ -4,11 +4,12 @@ import logoImg from "../../../public/images/logo.png";
 import smallwaveImg from '../../../public/images/Small Wave.svg';
 
 import { Section, Container, Header, TextContent } from "./styles";
+import { useState, useEffect } from "react";
 
 export default function Hero() {
   return (
     <Section id="hero">
-      <video src="/videos/hero.mp4" autoPlay loop muted></video>
+      <video src="/videos/hero.mp4" autoPlay loop muted ></video>
 
       <Container>
         <Header variants={revealFromLeft}>

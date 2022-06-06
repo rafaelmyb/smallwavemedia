@@ -66,7 +66,7 @@ export const TextContent = styled.div`
     font-weight: 600;
     line-height: 27px;
     margin-top: 80px;
-    color: var(--gray-300);
+    color: #e1e1e6;
 
     & + p {
       margin-top: 28.5px;

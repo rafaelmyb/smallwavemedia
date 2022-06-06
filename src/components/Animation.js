@@ -53,7 +53,7 @@ export const revealFromRight4 = {
 };
 
 export const revealFromBottom = {
-  hidden: { y: "15px", opacity: 0 },
+  hidden: { y: "20px", opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
