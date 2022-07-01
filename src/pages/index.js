@@ -14,11 +14,7 @@ export default function Home() {
       <Head>
         <title>Small Wave</title>
       </Head>
-      <main
-        style={{
-          backgroundColor: "#121214",
-        }}
-      >
+      <main>
         <Hero />
         <About />
         <Product description={productDescription[0]} />

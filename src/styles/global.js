@@ -43,6 +43,7 @@ export default createGlobalStyle`
 
   body {
     color: var(--white);
+    background: #121214;
     -webkit-font-feature-settings: "lnum";
     -moz-font-feature-settings: "lnum";
     font-feature-settings: "lnum";
