@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 export default function Hero() {
   return (
     <Section id="hero">
-      <video src="/videos/hero.mp4" autoPlay loop muted ></video>
+      <video src="/videos/heroCompressed.mp4" autoPlay loop muted></video>
 
       <Container>
         <Header variants={revealFromLeft}>
