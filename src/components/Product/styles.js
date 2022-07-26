@@ -75,11 +75,12 @@ export const Content = styled(motion.div).attrs(() => ({
   max-width: 1236px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 `;
 
 export const HeaderContainer = styled.div`
   display: flex;
-  
+
   button {
     font-size: 18px;
     font-weight: 700;
@@ -139,7 +140,7 @@ export const ServicesContainer = styled.div`
     display: inline-block;
     text-align: center;
     max-height: 100%;
-    
+
     p {
       margin-left: 0;
       margin-top: 24px;
@@ -149,5 +150,29 @@ export const ServicesContainer = styled.div`
 
   @media (max-width: 510px) {
     padding: 68px 48px;
+  }
+`;
+
+export const ProgressBar = styled.div`
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0.5px;
+  left: 0px;
+
+  .progress {
+    background: #6A6A6A;
+    height: 2px;
+    animation: progress-animation 10s forwards;
+  }
+
+  @keyframes progress-animation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
   }
 `;

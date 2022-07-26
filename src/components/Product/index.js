@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 
-import { revealFromLeft, revealFromRight, revealFromBottom } from "../Animation";
+import {
+  revealFromLeft,
+  revealFromRight,
+  revealFromBottom,
+} from "../Animation";
 
 import {
   Section,
@@ -11,6 +15,7 @@ import {
   Content,
   HeaderContainer,
   ServicesContainer,
+  ProgressBar,
 } from "./styles";
 
 export default function Product({ description }) {
@@ -19,20 +24,28 @@ export default function Product({ description }) {
   useEffect(() => {
     if (activeButton === 0) {
       setTimeout(() => {
-        setActiveButton(1)
-      }, 10000)
+        setActiveButton(1);
+      }, 9500);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (activeButton === 0) {
+      setTimeout(() => {
+        setActiveButton(1);
+      }, 9500);
     }
     if (activeButton === 1) {
       setTimeout(() => {
-        setActiveButton(2)
-      }, 10000)
+        setActiveButton(2);
+      }, 9500);
     }
     if (activeButton === 2) {
       setTimeout(() => {
-        setActiveButton(0)
-      }, 10000)
-    }    
-  }, [activeButton])
+        setActiveButton(0);
+      }, 9500);
+    }
+  }, [activeButton]);
 
   return (
     <Section>
@@ -43,7 +56,9 @@ export default function Product({ description }) {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-          >Como a Small Wave pode te servir</motion.h1>
+          >
+            Como a Small Wave pode te servir
+          </motion.h1>
           <motion.p
             variants={revealFromRight}
             initial="hidden"
@@ -104,11 +119,18 @@ export default function Product({ description }) {
           </HeaderContainer>
 
           <ServicesContainer>
-            <img src={description.link[activeButton].image} loading="lazy" alt="Squad Img" />
-            <p>
-              {description.link[activeButton].description}
-            </p>
+            <img
+              src={description.link[activeButton].image}
+              loading="lazy"
+              alt="Squad Img"
+            />
+            <p>{description.link[activeButton].description}</p>
           </ServicesContainer>
+          <ProgressBar>
+            {activeButton === 0 && <div className="progress"></div>}
+            {activeButton === 1 && <div className="progress"></div>}
+            {activeButton === 2 && <div className="progress"></div>}
+          </ProgressBar>
         </Content>
       </Container>
     </Section>
