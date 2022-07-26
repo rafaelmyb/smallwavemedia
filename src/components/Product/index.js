@@ -27,14 +27,6 @@ export default function Product({ description }) {
         setActiveButton(1);
       }, 9500);
     }
-  }, []);
-
-  useEffect(() => {
-    if (activeButton === 0) {
-      setTimeout(() => {
-        setActiveButton(1);
-      }, 9500);
-    }
     if (activeButton === 1) {
       setTimeout(() => {
         setActiveButton(2);
