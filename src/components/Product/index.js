@@ -21,22 +21,34 @@ import {
 export default function Product({ description }) {
   const [activeButton, setActiveButton] = useState(0);
 
-  useEffect(() => {
+  const autoScroll = true;
+  let slideInterval;
+  let intervalTime = 9000;
+
+  function nextSlide() {
     if (activeButton === 0) {
-      setTimeout(() => {
-        setActiveButton(1);
-      }, 9500);
+      setActiveButton(1);
     }
+
     if (activeButton === 1) {
-      setTimeout(() => {
-        setActiveButton(2);
-      }, 9500);
+      setActiveButton(2);
     }
+
     if (activeButton === 2) {
-      setTimeout(() => {
-        setActiveButton(0);
-      }, 9500);
+      setActiveButton(0);
     }
+  }
+
+  function auto() {
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+
+  useEffect(() => {
+    if (autoScroll) {
+      auto();
+    }
+
+    return () => clearInterval(slideInterval);
   }, [activeButton]);
 
   return (
@@ -73,8 +85,12 @@ export default function Product({ description }) {
                       border: "1px solid #e1e1e6",
                       borderBottom: "1px solid #0f0f10",
                       background: "#0f0f10",
+                      transition: ".5s ease-in",
                     }
-                  : { border: "none" }
+                  : {
+                      border: "1px solid #121214",
+                      borderBottom: "1px solid #e1e1e6",
+                    }
               }
               onClick={() => setActiveButton(0)}
             >
@@ -87,8 +103,12 @@ export default function Product({ description }) {
                       border: "1px solid #e1e1e6",
                       borderBottom: "1px solid #0f0f10",
                       background: "#0f0f10",
+                      transition: ".5s ease-in",
                     }
-                  : { border: "none" }
+                  : {
+                      border: "1px solid #121214",
+                      borderBottom: "1px solid #e1e1e6",
+                    }
               }
               onClick={() => setActiveButton(1)}
             >
@@ -101,8 +121,12 @@ export default function Product({ description }) {
                       border: "1px solid #e1e1e6",
                       borderBottom: "1px solid #0f0f10",
                       background: "#0f0f10",
+                      transition: ".5s ease-in",
                     }
-                  : { border: "none" }
+                  : {
+                      border: "1px solid #121214",
+                      borderBottom: "1px solid #e1e1e6",
+                    }
               }
               onClick={() => setActiveButton(2)}
             >

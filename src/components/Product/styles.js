@@ -120,6 +120,7 @@ export const ServicesContainer = styled.div`
   padding: 68px 78px;
   border: 1px solid ${({ theme }) => theme.colors.light};
   background: #0f0f10;
+  transition: 1s ease-in;
 
   img {
     max-width: 352px;
