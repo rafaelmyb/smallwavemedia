@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 
@@ -15,6 +15,24 @@ import {
 
 export default function Product({ description }) {
   const [activeButton, setActiveButton] = useState(0);
+
+  useEffect(() => {
+    if (activeButton === 0) {
+      setTimeout(() => {
+        setActiveButton(1)
+      }, 10000)
+    }
+    if (activeButton === 1) {
+      setTimeout(() => {
+        setActiveButton(2)
+      }, 10000)
+    }
+    if (activeButton === 2) {
+      setTimeout(() => {
+        setActiveButton(0)
+      }, 10000)
+    }    
+  }, [activeButton])
 
   return (
     <Section>
