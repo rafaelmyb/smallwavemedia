@@ -17,10 +17,10 @@ export default function Hero() {
         </Header>
         <TextContent variants={revealFromLeft}>
           <h1>
-            O gerenciamento de mídia <span>completo</span> que a sua marca <span>precisa</span> para
+            O gerenciamento de mídia <span>completo</span> que a sua empresa <span>precisa</span> para
             decolar.
           </h1>
-          <p>Propagando ondas por onde servimos</p>
+          <p>Propagando ondas por onde servimos.</p>
         </TextContent>
       </Container>
     </Section>

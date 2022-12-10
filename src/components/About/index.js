@@ -26,8 +26,8 @@ export default function About() {
             <p>Somos uma equipe forjada em meio a crise.</p>
             <p>
               Criamos soluções para empresas e igrejas para se comunicarem da
-              forma mais simples e ágil com o seu público, seja por fotos,
-              banners, frases ou vídeos.
+              forma simples, ágil e tecnológica com o seu público, seja por
+              fotos, banners, textos, site personalizado ou lives.
             </p>
             <p>
               Nos dedicamos em fazer o seu produto conhecido pelo público, com a

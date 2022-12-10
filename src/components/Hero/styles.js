@@ -97,7 +97,7 @@ export const TextContent = styled(motion.div).attrs(() => ({
   margin-top: 80px;
 
   h1 {
-    max-width: 618px;
+    max-width: 700px;
     letter-spacing: 0px;
     font-size: 48px;
     line-height: 55px;
